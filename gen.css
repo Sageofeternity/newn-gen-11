@@ -97,6 +97,17 @@ header{
     overflow: hidden;
  }
  
+
+.hq2{
+  background-image: url("images/minimal-technology-youtube-thumbnail.png");
+  background-position: center;
+  background-size:cover ;
+  background-repeat:no-repeat ;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
  .hero-kick{
     display: flex;
     width: 100%;
