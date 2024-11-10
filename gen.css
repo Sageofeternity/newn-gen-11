@@ -1,0 +1,599 @@
+*{
+margin: 0;
+box-sizing: border-box;
+padding: 0;
+font-family: "Merriweather", serif;
+}
+
+body{
+  font-family: sans-serif;
+  background: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    color: white;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.herobrine{
+    display: flex;
+}
+.chemical-reaction a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+.chemical-reaction{
+    display: flex;
+    list-style: none;
+}
+.chemical-reaction li{
+    margin: 0 15px;
+}
+.hamburger{
+    display: none;
+    font-size: 2rem;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 768px){
+    .chemical-reaction{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: black;
+        z-index: 100;
+        gap: 20px;
+        padding: 20px;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .chemical-reaction.active{
+        display: flex;
+
+    }
+    .hamburger{
+        display: block;
+    }
+   
+ }
+
+
+ .hero {
+    width: 100%;
+    align-items: center;
+    background-color: black;
+ }
+
+ .HQ{
+    background-image: url("images/medium-shot-man-wearing-vr-glasses.jpg");
+    background-position: center;
+    background-size:cover ;
+    background-repeat:no-repeat ;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+ }
+ 
+ .hero-kick{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+ }
+ .anti-hero{
+    width: 1000px;
+    height: 1000px;
+ background-color: transparent;
+ display: flex;
+ }
+
+ .anti-hero h2{
+    color: white;
+    font-size: 3rem;
+    width: 100%;
+    font-weight: 600;
+ }
+
+ .sidekick-container-info{
+    background: #2B546A;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    display: flex;
+}
+
+.Service-container{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+    color: white    ;
+}
+.contain{
+    width: 100%
+}
+.Service-contain{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+padding: 20px;
+}
+.Box{
+    width: 300px;
+    height: 200px;
+    
+}
+ 
+.Box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px){
+  .hero{
+    height: 60vh;
+  }
+  .HQ img {
+    height: 60vh;
+  }
+    .Service-contain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 20px;
+        }
+        .Box{
+            width: 100%;
+            height: 100%;
+            
+            
+        }
+
+}
+
+.destiny{
+     width: 100%;
+     justify-content: center;
+     background: black;
+     align-items: center;
+     text-align: center;
+}
+.destiny h2{
+    padding: 20px;
+    color: white;
+}
+
+.mini-destiny{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.destiny-image{
+    width: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.destiny-image img{
+    width: 100%;
+}
+  
+.destiny-info{
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .mini-destiny{
+     padding: 20px;
+        flex-direction: column;
+    }
+    .destiny-image{
+        width: 100%;
+    }
+}
+
+.team-member{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.team-member h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.semi-members{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.Box2{
+ width: 20%;
+}
+.Box2 img{
+    width: 100%;
+}
+
+.team-member p {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px){
+ .semi-members{
+    flex-direction: column;
+    width: 100%;
+ }
+
+ .Box2{
+    width: 100%;
+ }
+}
+
+.Big-testimony{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center; 
+    background: black;
+}
+
+.Big-testimony h2{
+    padding: 20px;
+}
+.Testimony {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 1000px; /* Set max width for the grid */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box3 {
+     /* Green background */
+    color: black; /* White text */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    height: 300px;
+    border: 1px solid;
+    background: white;
+}
+
+.testimony-info{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.yapper{
+    width: 100%;
+    font-size: 1rem;
+}
+
+.testimony-image{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.vincent{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.test-name p {
+margin-left: 20px;
+font-size: 1rem;
+}
+
+.test-name h3 {
+    margin-left: 20px;
+    }
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Two boxes per row on small screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* One box per row on extra small screens */
+    }
+}
+
+.News-and-articles{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background: black;
+    color: white    ;
+}
+.article-contain{
+    width: 100%
+}
+.big-news{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+padding: 20px;
+}
+.Box4{
+    width: 500px;
+    height: 300px;
+    
+}
+ 
+.Box4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.News-and-articles h1{
+  font-size:25px;
+}
+
+.News-and-articles p{
+    text-align: left;
+}
+
+.News-and-articles h2{
+    font-size: 40px;
+}
+
+@media screen and (max-width: 768px){
+    .News-and-articles{
+      height: 60vh;
+    }
+    .box4 img {
+      height: 60vh;
+    }
+      .big-news{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 50px;
+          padding: 20px;
+          }
+          .Box4 {
+              width: 200%;
+              height: 300%;
+              
+              
+          }
+  
+  }
+
+
+
+
+
+
+
+
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
